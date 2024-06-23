@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>TGE Official Website</title>
-    <link rel="icon" type="image/png" href="tge.png"> <!-- Favicon link -->
     <style>
         body {
             display: flex;
@@ -11,10 +10,11 @@
             height: 100vh;
             margin: 0;
             background-image: url('background.png');
-            background-size: cover; /* Ensures the background image covers the entire background */
-            background-repeat: no-repeat; /* Prevents the background image from repeating */
+            background-size: cover;
+            background-repeat: no-repeat;
             color: white;
             position: relative;
+            text-align: center; /* Center align text in the body */
         }
 
         .banner-text {
@@ -29,18 +29,18 @@
         }
 
         .image {
-            text-align: center; /* Center align the image */
-            margin-top: 20px; /* Add some top margin */
+            text-align: center;
+            margin-top: 20px;
         }
 
         .image a {
-            display: inline-block; /* Make the link an inline-block element */
+            display: inline-block;
         }
 
         .image img {
-            max-width: 100%; /* Maximum width of the image */
-            height: auto; /* Maintain aspect ratio */
-            border: none; /* Remove default border */
+            max-width: 100%;
+            height: auto;
+            border: none;
         }
 
         @keyframes typing {
@@ -60,25 +60,44 @@
             white-space: nowrap;
             margin: 0 auto;
             letter-spacing: .15em;
-            animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        button.typewriter-text {
+            width: 250px;
+            text-align: center;
+            padding: 10px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        button.typewriter-text a {
+            color: white;
+            text-decoration: none;
+        }
+
+        table {
+            margin: 0 auto; /* Center the table */
+            border: 3px solid white;
+            border-collapse: collapse;
+        }
+
+        th {
+            padding: 10px;
         }
     </style>
+    <link rel="icon" type="image/png" href="tge.png"> <!-- Add favicon -->
 </head>
 <body>
 
 <div class="banner-text">
     <h1 class="typewriter-text">The German Empire Official Site and updates</h1>
-    <br>
-    <br>
-    <br>
+    <br><br><br>
     <h1 class="typewriter-text">Game just released, no updates yet!</h1>
-    <br>
-    <br>
-    <br>
+    <br><br><br>
     <h1 class="typewriter-text">Play the game here:</h1>
-    <br>
-    <br>
-    <br>
+    <br><br><br>
     <button class="typewriter-text">
         <a href="https://www.roblox.com/games/17577113067/British-Army" target="_blank">
             Roblox TGE game
@@ -87,13 +106,11 @@
 </div>
 
 <div class="banner-text2">
-    <!-- Clickable image -->
     <div class="image">
         <a href="https://nothaz3m.github.io/tge/" target="_blank">
             <img src="tge.png" alt="Banner Image">
         </a>
     </div>
 </div>
-
 </body>
 </html>
