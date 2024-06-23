@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TGE Offical website</title>
+    <title>TGE Official Website</title>
     <style>
         body {
             display: flex;
@@ -11,10 +11,17 @@
             margin: 0;
             background-color: #000000;
             color: white;
+            position: relative; /* Ensure body is the reference for absolute positioning */
         }
         
         .banner-text {
             text-align: center;
+        }
+        .banner-text2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 10px;
         }
         
         @keyframes typing {
@@ -40,7 +47,7 @@
 </head>
 <body>
     <div class="banner-text">
-        <h1 class="typewriter-text">The German Empire Offical Site and updates</h1>
+        <h1 class="typewriter-text">The German Empire Official Site and updates</h1>
         <br>
         <br>
         <br>
@@ -52,13 +59,14 @@
         <br>
         <br>
         <br>
-        <a>
-            <button class="typewriter-text">
-                <a href="https://www.roblox.com/games/17577113067/British-Army">
-                    Roblox TGE game
-                </a>
-            </button>
-        </a>
+        <button class="typewriter-text">
+            <a href="https://www.roblox.com/games/17577113067/British-Army">
+                Roblox TGE game
+            </a>
+        </button>
+    </div>
+    <div class="banner-text2">
+        <img src="tge.png" alt="Banner Image">
     </div>
 </body>
 </html>
